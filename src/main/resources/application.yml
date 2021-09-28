@@ -1,0 +1,33 @@
+#micronaut:
+#  application:
+#    name: carrosGrpc
+#datasources:
+#  default:
+#    url: jdbc:postgresql://localhost:5433/postgres/carros
+#    driverClassName: org.postgresql.Driver
+#    username: postgres
+#    password: ''
+#    schema-generate: CREATE_DROP
+#    dialect: POSTGRES
+#jpa.default.properties.hibernate.hbm2ddl.auto: update
+
+micronaut:
+  application:
+    name: carros-grpc
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5433/postgres #?currentSchema=carros_test
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: DevFox02
+    #    schema-generate: CREATE_DROP
+    dialect: POSTGRES
+jpa.default.properties.hibernate.hbm2ddl.auto: update
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+
